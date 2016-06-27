@@ -12,22 +12,32 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <form method="post" action="teste.jsp">
-            <div>
-                <fieldset>
-                    <legend>Jogos Intercampi - IFRN 2015</legend>
-                    <h3>Cadastro de Atletas</h3>
-                    <hr>
-                    <p>Nome <input type="text" name="nome" maxlength="50"></p>
-                    <p>Matrícula <input type="text" name="matricula"></p>
-                    
-                    <p>Esportes <input type="checkbox" name="esporte" value="Futsal">Futsal
-                    <input type="checkbox" name="esporte" value="Volei">Volei
-                    <input type="checkbox" name="esporte" value="Natação">Natação
-                    <input type="checkbox" name="esporte" value="Basquete">Basquete</p>
-                    <input type="submit" value="Cadastrar">
-                </fieldset>
-            </div>
-        </form>
+      <div>
+         <fieldset>
+            <form method="post" action="inscrever.jsp">
+                <input type="hidden" value="2" name="op">
+                        <legend>Jogos Intercampi - IFRN 2016</legend>
+                        <h3>Cadastro de Atletas</h3>
+                        <hr>
+                        <p>Nome <input type="text" name="nome" maxlength="50"></p>
+                        <p>Matrícula <input type="text" name="matricula"></p>
+                        <p>Modalidade<select name="esporte">
+                                    <option value="Futsal">Futsal</option>
+                                    <option value="Vôlei">Vôlei</option>
+                                    <option value="Natação">Natação</option>
+                                    <option value="Basquete">Basquete</option>
+                            </select></p>
+
+                        <input type="submit" value="Cadastrar">
+
+            </form>
+
+            <form method="post" action="inscrever.jsp">
+                <br>
+                <input type="hidden" value="1" name="op">
+                <input type="submit" value="Listar Inscrições">
+            </form>
+            </fieldset>
+        </div>
     </body>
 </html>
