@@ -1,6 +1,8 @@
 # Semadec
 Atividade desenvolvida para a disciplina de Programação Web I do curso de Tecnologia em Sistemas para Internet do IFRN
 
+OBS.: Por algum motivo o Netbeans não aceita enviar para esse projeto a pasta WEB-INF aqui para o Github, desta forma, ao baixar esse projeto, será necessário a criação manual da pasta, para isso, clique com o botão direito do mouse em cima de "Páginas Web", selecione "Novo" e depois "Pasta" e de a pasta o nome de "WEB-INF"(exatamente desta forma), fazendo isso, o projeto vai funcionar perfeitamente. 
+    
 Para o devido funcionamento alguns passos a seguir:
 
 1 - Com o projeto já no editor, adicione o drive de conexão do banco, no caso o do MySQL:
@@ -14,3 +16,4 @@ Para o devido funcionamento alguns passos a seguir:
     2.4 - E altera "LOGIN" e "SENHA" para seu login e senha do MySQL.
     
 3 - Ao criar o banco, vai ser necessário que esse possua uma tabela, que tenha os campos, nome, modalidade e matricula, sugiro criar a tabela com o nome de "tbl_inscricoes", caso contrário, vai ser necessário alterar o nome da tabela nas consultas presentes no arquivo SemadecDAO.java. 
+
