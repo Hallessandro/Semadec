@@ -13,4 +13,4 @@ Para o devido funcionamento alguns passos a seguir:
     2.3 - O nome do banco "semadec" para o nome do banco que você criou no seu MySQL;
     2.4 - E altera "LOGIN" e "SENHA" para seu login e senha do MySQL.
     
-  
+3 - Ao criar o banco, vai ser necessário que esse possua uma tabela, que tenha os campos, nome, modalidade e matricula, sugiro criar a tabela com o nome de "tbl_inscricoes", caso contrário, vai ser necessário alterar o nome da tabela nas consultas presentes no arquivo SemadecDAO.java. 
